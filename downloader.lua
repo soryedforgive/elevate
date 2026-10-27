@@ -1,3 +1,9 @@
+local playersService = game:GetService("Players")
+local KICK_MESSAGE = "Get a key from 52.22"
+if type(getgenv().script_key) ~= "string" or #getgenv().script_key == 0 then
+	return playersService.LocalPlayer:Kick(KICK_MESSAGE)
+end
+
 local _args = ...
 if type(_args) ~= "table" then _args = {} end
 
