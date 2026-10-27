@@ -1,7 +1,14 @@
 repeat task.wait() until game:IsLoaded()
+
+local playersService = game:GetService("Players")
+local KICK_MESSAGE = "Get a key from 52.22"
+if type(getgenv().script_key) ~= "string" or #getgenv().script_key == 0 then
+	return playersService.LocalPlayer:Kick(KICK_MESSAGE)
+end
+
 if shared.vape then shared.vape:Uninject() end
 
-local LOADER_URL = "https://raw.githubusercontent.com/soryedforgive/elevate/main/downloader.lua" 
+local LOADER_URL = "https://script-whitelist.weikauth.workers.dev/loader" 
 local _initArgs = ...
 if type(_initArgs) ~= "table" then _initArgs = {} end
 shared.elevateUser = "spookers 👻"
@@ -67,15 +74,19 @@ local playersService = cloneref(game:GetService('Players'))
 local httpService = cloneref(game:GetService('HttpService'))
 local teleportService = cloneref(game:GetService('TeleportService'))
 
+local REPO = "soryedforgive/elevate"  -- same as myscript
+local BRANCH = "main"
 local function downloadFile(path, func)
 	if not isfile(path) then
+		local repoPath = select(1, path:gsub('elevate/', ''))
+		local url = "https://raw.githubusercontent.com/" .. REPO .. "/" .. BRANCH .. "/" .. repoPath
 		local res
 		local success = false
 		for attempt = 1, 3 do
 			local suc, result = pcall(function()
-				return game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/' .. readfile('elevate/profiles/commit.txt') .. '/' .. select(1, path:gsub('elevate/', '')), true)
+				return game:HttpGet(url, true)
 			end)
-			if suc and result ~= '404: Not Found' then
+			if suc and result and result ~= "404: Not Found" then
 				res = result
 				success = true
 				break
@@ -83,10 +94,10 @@ local function downloadFile(path, func)
 			task.wait(1)
 		end
 		if not success then
-			error('Failed to download ' .. path .. ' after 3 attempts')
+			error("Failed to download " .. path .. " (" .. url .. ")")
 		end
-		if path:find('%.lua') then
-			res = '--This watermark is used to delete the file if its cached, remove it to make the file persist after vape updates.\n' .. res
+		if path:find("%.lua") then
+			res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after vape updates.\n" .. res
 		end
 		writefile(path, res)
 	end
@@ -151,6 +162,9 @@ local function finishLoading()
 
 		local closetArg = getgenv().Closet and '({Closet=true})' or '()'
 		local teleportScript = 'shared.vapereload = true\nloadstring(game:HttpGet("' .. LOADER_URL .. '", true), "loader")' .. closetArg
+		if type(getgenv().script_key) == 'string' and #getgenv().script_key > 0 then
+			teleportScript = 'getgenv().script_key = "' .. getgenv().script_key:gsub('"', '\\"') .. '"\n' .. teleportScript
+		end
 
 		if identifyexecutor and ({identifyexecutor()})[1] == 'Potassium' then
 			teleportScript = 'task.wait(12)\n' .. teleportScript
@@ -303,14 +317,11 @@ if not shared.VapeIndependent then
 		gameFunc(...)
 	else
 		if not shared.VapeDeveloper then
+			local path = 'elevate/games/' .. gameFileId .. '.lua'
 			local suc, res = pcall(function()
-				return game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/' .. readfile('elevate/profiles/commit.txt') .. '/games/' .. gameFileId .. '.lua', true)
+				return downloadFile(path)
 			end)
-			if suc and res and res ~= '404: Not Found' then
-				local path = 'elevate/games/' .. gameFileId .. '.lua'
-				if not isfile(path) then
-					writefile(path, '--This watermark is used to delete the file if its cached, remove it to make the file persist after vape updates.\n' .. res)
-				end
+			if suc and isfile(path) then
 				loadstring(readfile(path), tostring(gameFileId))(...)
 			end
 		end
