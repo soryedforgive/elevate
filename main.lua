@@ -1,10 +1,10 @@
 repeat task.wait() until game:IsLoaded()
 if shared.vape then shared.vape:Uninject() end
 
-local LOADER_URL = "https://raw.githubusercontent.com/wrealaero/aerov4/main/downloader.lua" 
+local LOADER_URL = "https://raw.githubusercontent.com/soryedforgive/elevate/main/downloader.lua" 
 local _initArgs = ...
 if type(_initArgs) ~= "table" then _initArgs = {} end
-shared.aerov4User = "spookers 👻"
+shared.elevateUser = "spookers 👻"
 
 if identifyexecutor then
 	if table.find({'Wave', 'Seliware', 'Volt'}, ({identifyexecutor()})[1]) then
@@ -73,7 +73,7 @@ local function downloadFile(path, func)
 		local success = false
 		for attempt = 1, 3 do
 			local suc, result = pcall(function()
-				return game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/' .. readfile('aerov4/profiles/commit.txt') .. '/' .. select(1, path:gsub('aerov4/', '')), true)
+				return game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/' .. readfile('elevate/profiles/commit.txt') .. '/' .. select(1, path:gsub('elevate/', '')), true)
 			end)
 			if suc and result ~= '404: Not Found' then
 				res = result
@@ -94,18 +94,18 @@ local function downloadFile(path, func)
 end
 
 local function migrateProfiles()
-	if isfile('aerov4/profiles/migrated_placeid.txt') then return end
+	if isfile('elevate/profiles/migrated_placeid.txt') then return end
 
 	local oldId = tostring(game.GameId)
 	local newId = tostring(game.PlaceId)
 
 	if oldId == newId then
-		pcall(writefile, 'aerov4/profiles/migrated_placeid.txt', 'done')
+		pcall(writefile, 'elevate/profiles/migrated_placeid.txt', 'done')
 		return
 	end
 
 	local suffix = oldId .. '.txt'
-	for _, path in ipairs(listfiles('aerov4/profiles')) do
+	for _, path in ipairs(listfiles('elevate/profiles')) do
 		local name = path:gsub('\\', '/')
 		if name:sub(-#suffix) == suffix then
 			local newPath = name:sub(1, -#suffix - 1) .. newId .. '.txt'
@@ -115,8 +115,8 @@ local function migrateProfiles()
 		end
 	end
 
-	if isfolder('aerov4/profiles/premade') then
-		for _, path in ipairs(listfiles('aerov4/profiles/premade')) do
+	if isfolder('elevate/profiles/premade') then
+		for _, path in ipairs(listfiles('elevate/profiles/premade')) do
 			local name = path:gsub('\\', '/')
 			if name:sub(-#suffix) == suffix then
 				local newPath = name:sub(1, -#suffix - 1) .. newId .. '.txt'
@@ -127,7 +127,7 @@ local function migrateProfiles()
 		end
 	end
 
-	pcall(writefile, 'aerov4/profiles/migrated_placeid.txt', 'done')
+	pcall(writefile, 'elevate/profiles/migrated_placeid.txt', 'done')
 end
 
 pcall(migrateProfiles)
@@ -135,7 +135,7 @@ pcall(migrateProfiles)
 local function finishLoading()
 	vape.Init = nil
 	if not vape.Load then
-		warn('[aerov4] vape.Load is nil skipping load')
+		warn('[elevate] vape.Load is nil skipping load')
 		return
 	end
 	vape:Load()
@@ -186,21 +186,21 @@ local function finishLoading()
 	if not shared.vapereload then
 		if not vape.Categories then return end
 		if vape.Categories.Main.Options['GUI bind indicator'].Enabled then
-			vape:CreateNotification('[aerov4] Finished Loading', 'wsg ' .. shared.aerov4User .. ' ' .. (vape.VapeButton and 'Press the button in the top right to open GUI' or 'Press ' .. table.concat(vape.Keybind, ' + '):upper() .. ' to open GUI'), 5)
+			vape:CreateNotification('[elevate] Finished Loading', 'wsg ' .. shared.elevateUser .. ' ' .. (vape.VapeButton and 'Press the button in the top right to open GUI' or 'Press ' .. table.concat(vape.Keybind, ' + '):upper() .. ' to open GUI'), 5)
 		end
 	end
 end
 
-if not isfile('aerov4/profiles/gui.txt') then
-	writefile('aerov4/profiles/gui.txt', 'new')
+if not isfile('elevate/profiles/gui.txt') then
+	writefile('elevate/profiles/gui.txt', 'new')
 end
-local gui = readfile('aerov4/profiles/gui.txt')
+local gui = readfile('elevate/profiles/gui.txt')
 
-if not isfolder('aerov4/assets/' .. gui) then
-	makefolder('aerov4/assets/' .. gui)
+if not isfolder('elevate/assets/' .. gui) then
+	makefolder('elevate/assets/' .. gui)
 end
 
-local guiSource = downloadFile('aerov4/guis/' .. gui .. '.lua')
+local guiSource = downloadFile('elevate/guis/' .. gui .. '.lua')
 local guiFunc, guiErr = loadstring(guiSource, 'gui')
 if not guiFunc then
 	local errMsg = tostring(guiErr)
@@ -218,18 +218,18 @@ if not guiFunc then
 		end
 		context = '\n\nContext:\n' .. table.concat(parts, '\n')
 	end
-	error('[aerov4] syntax error in ' .. gui .. '.lua' .. '\n' .. errMsg .. context)
+	error('[elevate] syntax error in ' .. gui .. '.lua' .. '\n' .. errMsg .. context)
 end
 vape = guiFunc()
 if not vape then
-	error('[aerov4] GUI returned nil file may be corrupted try deleting aerov4/guis/' .. gui .. '.lua and reinjecting.')
+	error('[elevate] GUI returned nil file may be corrupted try deleting elevate/guis/' .. gui .. '.lua and reinjecting.')
 end
 if not vape.Load then
-	if delfile then pcall(function() delfile('aerov4/guis/' .. gui .. '.lua') end) end
-	error('[aerov4] gui file corrupted (missing load) reinject..')
+	if delfile then pcall(function() delfile('elevate/guis/' .. gui .. '.lua') end) end
+	error('[elevate] gui file corrupted (missing load) reinject..')
 end
 if not vape.Init and not vape.Load then
-	error('[aerov4] failed to initialize properly reinject to fix this bs')
+	error('[elevate] failed to initialize properly reinject to fix this bs')
 end
 shared.vape = vape
 task.wait(0.1)
@@ -256,11 +256,11 @@ if getgenv().Closet then
 end
 
 if not shared.VapeIndependent then
-	loadstring(downloadFile('aerov4/games/universal.lua'), 'universal')()
+	loadstring(downloadFile('elevate/games/universal.lua'), 'universal')()
 	local gameFileId = (game.GameId == 2619619496) and (game.PlaceId == 6872265039 and 6872265039 or 6872274481) or (game.GameId == 10516888336 and 10516888336 or game.PlaceId)
 
-	if isfile('aerov4/games/' .. gameFileId .. '.lua') then
-		local gameSrc = downloadFile('aerov4/games/' .. gameFileId .. '.lua')
+	if isfile('elevate/games/' .. gameFileId .. '.lua') then
+		local gameSrc = downloadFile('elevate/games/' .. gameFileId .. '.lua')
 		local gameFunc, gameErr = loadstring(gameSrc, tostring(gameFileId))
 		if not gameFunc then
 			local ls = gameSrc:split('\n')
@@ -298,16 +298,16 @@ if not shared.VapeIndependent then
 				end
 				ctx = '\n\naround here:\n' .. table.concat(parts, '\n')
 			end
-			error('[aerov4] syntax error in ' .. gameFileId .. '.lua\n' .. msg .. where .. ctx)
+			error('[elevate] syntax error in ' .. gameFileId .. '.lua\n' .. msg .. where .. ctx)
 		end
 		gameFunc(...)
 	else
 		if not shared.VapeDeveloper then
 			local suc, res = pcall(function()
-				return game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/' .. readfile('aerov4/profiles/commit.txt') .. '/games/' .. gameFileId .. '.lua', true)
+				return game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/' .. readfile('elevate/profiles/commit.txt') .. '/games/' .. gameFileId .. '.lua', true)
 			end)
 			if suc and res and res ~= '404: Not Found' then
-				local path = 'aerov4/games/' .. gameFileId .. '.lua'
+				local path = 'elevate/games/' .. gameFileId .. '.lua'
 				if not isfile(path) then
 					writefile(path, '--This watermark is used to delete the file if its cached, remove it to make the file persist after vape updates.\n' .. res)
 				end

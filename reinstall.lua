@@ -1,6 +1,6 @@
 local commit
 pcall(function()
-	commit = readfile('aerov4/profiles/commit.txt')
+	commit = readfile('elevate/profiles/commit.txt')
 end)
 
 local function wipe(path)
@@ -14,18 +14,18 @@ local function wipe(path)
 	end
 end
 
-if isfolder('aerov4') then
-	wipe('aerov4')
+if isfolder('elevate') then
+	wipe('elevate')
 end
 
 pcall(function()
 	game:GetService('StarterGui'):SetCore('SendNotification', {
-		Title = 'aerov4',
-		Text = 'deleted aerov4, reinjecting now',
+		Title = 'elevate',
+		Text = 'deleted elevate, reinjecting now',
 		Duration = 4
 	})
 end)
 
 task.wait(0.67)
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/'..(commit or 'main')..'/main.lua', true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/'..(commit or 'main')..'/main.lua', true))()

@@ -12,13 +12,13 @@ local run = function(func)
 		local ok, err = pcall(func)
 		_runBusy = false
 		if not ok then
-			warn('[aerov4] module failed to load: ' .. tostring(err))
+			warn('[elevate] module failed to load: ' .. tostring(err))
 		end
 		return
 	end
 	local ok, err = pcall(func)
 	if not ok then
-		warn('[aerov4] module failed to load: ' .. tostring(err))
+		warn('[elevate] module failed to load: ' .. tostring(err))
 	end
 end
 task.wait()
@@ -203,7 +203,7 @@ setmetatable(remotes, {
 			task.delay(10, function()
 				if rawget(remotes, key) == nil then
 					pcall(function()
-						vape.Notify('[aerov4] remote "' .. tostring(key) .. '" changed or removed some features may not work bru (dm @5qvx for fix)', 6)
+						vape.Notify('[elevate] remote "' .. tostring(key) .. '" changed or removed some features may not work bru (dm @5qvx for fix)', 6)
 					end)
 				end
 			end)
@@ -219,7 +219,7 @@ local function addBlur(parent)
 	blur.Size = UDim2.new(1, 89, 1, 52)
 	blur.Position = UDim2.fromOffset(-48, -31)
 	blur.BackgroundTransparency = 1
-	blur.Image = getcustomasset('aerov4/assets/new/blur.png')
+	blur.Image = getcustomasset('elevate/assets/new/blur.png')
 	blur.ScaleType = Enum.ScaleType.Slice
 	blur.SliceCenter = Rect.new(52, 31, 261, 502)
 	blur.Parent = parent
@@ -1474,7 +1474,7 @@ run(function()
 
 		if remote == '' or remote == nil then
 			if not preDumped[i] then
-				notif('aerov4', 'Failed to grab remote ('..tostring(i)..')', 10, 'alert')
+				notif('elevate', 'Failed to grab remote ('..tostring(i)..')', 10, 'alert')
 			end
 			remote = preDumped[i] or ''
 		end
@@ -19146,14 +19146,14 @@ run(function()
 	end
 
 	local function cleanupVisuals()
-		destroyNamed(PlayerGui, "aerov4KitRender")
-		destroyNamed(PlayerGui, "aerov4KitIcon")
-		destroyNamed(PlayerGui, "aerov4KitLevel")
-		destroyNamed(PlayerGui, "aerov4LastKit")
+		destroyNamed(PlayerGui, "elevateKitRender")
+		destroyNamed(PlayerGui, "elevateKitIcon")
+		destroyNamed(PlayerGui, "elevateKitLevel")
+		destroyNamed(PlayerGui, "elevateLastKit")
 	end
 
 	local function cleanupLastMatch()
-		destroyNamed(PlayerGui, "aerov4LastKit")
+		destroyNamed(PlayerGui, "elevateLastKit")
 	end
 
 	local function extractHistory(payload)
@@ -19478,10 +19478,10 @@ run(function()
 		if not host or not host.Parent then return end
 		unclip(host)
 
-		local icon = host:FindFirstChild("aerov4KitRender")
+		local icon = host:FindFirstChild("elevateKitRender")
 		if not icon then
 			icon = Instance.new("ImageLabel")
-			icon.Name = "aerov4KitRender"
+			icon.Name = "elevateKitRender"
 			icon.AnchorPoint = Vector2.new(1, 0.5)
 			icon.Position = UDim2.new(1.05, 0, 0.5, 0)
 			icon.Size = UDim2.new(1.5, 0, 1.5, 0)
@@ -19514,10 +19514,10 @@ run(function()
 		if not nameLabel then return end
 		unclip(nameLabel)
 
-		local levelLabel = nameLabel:FindFirstChild("aerov4KitLevel")
+		local levelLabel = nameLabel:FindFirstChild("elevateKitLevel")
 		if not levelLabel then
 			levelLabel = Instance.new("TextLabel")
-			levelLabel.Name = "aerov4KitLevel"
+			levelLabel.Name = "elevateKitLevel"
 			levelLabel.AnchorPoint = Vector2.new(0, 0.5)
 			levelLabel.Position = UDim2.new(1, 5, 0.5, 0)
 			levelLabel.Size = UDim2.fromOffset(44, 15)
@@ -19543,7 +19543,7 @@ run(function()
 	local function createLastMatchBadge(host, plr, slot)
 		slot = slot or 1
 		local badge = Instance.new("Frame")
-		badge.Name = "aerov4LastKit"
+		badge.Name = "elevateLastKit"
 		badge:SetAttribute("UserId", plr.UserId)
 		badge:SetAttribute("Slot", slot)
 		badge.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -19592,7 +19592,7 @@ run(function()
 
 		if not (LastKitToggle and LastKitToggle.Enabled) then
 			for _, old in host:GetChildren() do
-				if old.Name == "aerov4LastKit" then
+				if old.Name == "elevateLastKit" then
 					old:Destroy()
 				end
 			end
@@ -19604,7 +19604,7 @@ run(function()
 		local count = LastKitCount and LastKitCount.Value or 1
 		local badges = {}
 		for _, obj in host:GetChildren() do
-			if obj.Name == "aerov4LastKit" then
+			if obj.Name == "elevateLastKit" then
 				local slot = obj:GetAttribute("Slot") or 1
 				if slot > count or badges[slot] then
 					obj:Destroy()
@@ -19690,9 +19690,9 @@ run(function()
 	end
 
 	local function ensureParty(host, plr)
-		local icon = host and host:FindFirstChild("aerov4KitRender")
+		local icon = host and host:FindFirstChild("elevateKitRender")
 		if not icon then return end
-		local badge = icon:FindFirstChild("aerov4Party")
+		local badge = icon:FindFirstChild("elevateParty")
 		local num = PartyToggle and PartyToggle.Enabled and currentPartyNumbers[plr.UserId]
 		if not num then
 			if badge then
@@ -19702,7 +19702,7 @@ run(function()
 		end
 		if not badge then
 			badge = Instance.new("TextLabel")
-			badge.Name = "aerov4Party"
+			badge.Name = "elevateParty"
 			badge.AnchorPoint = Vector2.new(1, 0)
 			badge.Position = UDim2.new(1, 2, 0, -2)
 			badge.Size = UDim2.fromOffset(16, 16)
@@ -19739,9 +19739,9 @@ run(function()
 			local mine, theirs = player:GetAttribute("Team"), plr:GetAttribute("Team")
 			if mine and theirs and mine == theirs then
 				local mateHost = findHost(render)
-				destroyNamed(mateHost, "aerov4KitRender")
-				destroyNamed(mateHost, "aerov4KitLevel")
-				destroyNamed(mateHost, "aerov4LastKit")
+				destroyNamed(mateHost, "elevateKitRender")
+				destroyNamed(mateHost, "elevateKitLevel")
+				destroyNamed(mateHost, "elevateLastKit")
 			end
 			return
 		end
@@ -19753,7 +19753,7 @@ run(function()
 		if LevelToggle and LevelToggle.Enabled then
 			ensureLevel(host, plr)
 		else
-			destroyNamed(host, "aerov4KitLevel")
+			destroyNamed(host, "elevateKitLevel")
 		end
 		ensureLastMatch(host, plr)
 		if PartyToggle and PartyToggle.Enabled and lastKitCache[plr.UserId] == nil then
@@ -19938,7 +19938,7 @@ run(function()
 			elseif ct == 'unverified' then c.impossible += 1
 			else c.mod += 1 end
 		end
-		getgenv()._aerov4_staffCounts = c
+		getgenv()._elevate_staffCounts = c
 		vapeEvents.StaffCountUpdate:Fire()
 	end
 
@@ -24607,7 +24607,7 @@ run(function()
 		close.Position = UDim2.new(1, -35, 0, 9)
 		close.BackgroundColor3 = Color3.new(1, 1, 1)
 		close.BackgroundTransparency = 1
-		close.Image = getcustomasset('aerov4/assets/new/close.png')
+		close.Image = getcustomasset('elevate/assets/new/close.png')
 		close.ImageColor3 = color.Light(uipallet.Text, 0.2)
 		close.ImageTransparency = 0.5
 		close.AutoButtonColor = false
@@ -24722,7 +24722,7 @@ run(function()
 		searchicon.Size = UDim2.fromOffset(14, 14)
 		searchicon.Position = UDim2.new(1, -26, 0, 8)
 		searchicon.BackgroundTransparency = 1
-		searchicon.Image = getcustomasset('aerov4/assets/new/search.png')
+		searchicon.Image = getcustomasset('elevate/assets/new/search.png')
 		searchicon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		searchicon.Parent = searchbkg
 		local children = Instance.new('ScrollingFrame')
@@ -24863,7 +24863,7 @@ run(function()
 		textbuttonicon.Position = UDim2.fromScale(0.5, 0.5)
 		textbuttonicon.AnchorPoint = Vector2.new(0.5, 0.5)
 		textbuttonicon.BackgroundTransparency = 1
-		textbuttonicon.Image = getcustomasset('aerov4/assets/new/add.png')
+		textbuttonicon.Image = getcustomasset('elevate/assets/new/add.png')
 		textbuttonicon.ImageColor3 = Color3.fromHSV(0.46, 0.96, 0.52)
 		textbuttonicon.Parent = textbutton
 		local childrenlist = Instance.new('Frame')
@@ -24956,7 +24956,7 @@ run(function()
 			close.Position = UDim2.new(1, -23, 0, 6)
 			close.BackgroundColor3 = Color3.new(1, 1, 1)
 			close.BackgroundTransparency = 1
-			close.Image = getcustomasset('aerov4/assets/new/closemini.png')
+			close.Image = getcustomasset('elevate/assets/new/closemini.png')
 			close.ImageColor3 = color.Light(uipallet.Text, 0.2)
 			close.ImageTransparency = 0.5
 			close.AutoButtonColor = false
@@ -25928,7 +25928,7 @@ run(function()
 						Size = UDim2.new(1, 89, 1, 52),
 						Position = UDim2.fromOffset(-48, -31),
 						BackgroundTransparency = 1,
-						Image = getcustomasset('aerov4/assets/new/blur.png'),
+						Image = getcustomasset('elevate/assets/new/blur.png'),
 						ScaleType = Enum.ScaleType.Slice,
 						SliceCenter = Rect.new(52, 31, 261, 502)
 					}),
@@ -30561,7 +30561,7 @@ run(function()
 		blur.Size = UDim2.new(1, 89, 1, 52)
 		blur.Position = UDim2.fromOffset(-48, -31)
 		blur.BackgroundTransparency = 1
-		blur.Image = getcustomasset('aerov4/assets/new/blur.png')
+		blur.Image = getcustomasset('elevate/assets/new/blur.png')
 		blur.ScaleType = Enum.ScaleType.Slice
 		blur.SliceCenter = Rect.new(52, 31, 261, 502)
 		blur.Parent = parent
@@ -36070,7 +36070,7 @@ run(function()
 				Session.Thread = task.spawn(function()
 					local ok, err = pcall(AutoKitFunctions[Kit], Session)
 					if not ok then
-						warn('[aerov4] autokit ' .. Kit .. ': ' .. tostring(err))
+						warn('[elevate] autokit ' .. Kit .. ': ' .. tostring(err))
 					end
 				end)
 			end

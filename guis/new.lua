@@ -59,72 +59,72 @@ local uipallet = {
 }
 
 local getcustomassets = {
-	['aerov4/assets/new/add.png'] = 'rbxassetid://14368300605',
-	['aerov4/assets/new/alert.png'] = 'rbxassetid://14368301329',
-	['aerov4/assets/new/allowedicon.png'] = 'rbxassetid://14368302000',
-	['aerov4/assets/new/allowedtab.png'] = 'rbxassetid://14368302875',
-	['aerov4/assets/new/arrowmodule.png'] = 'rbxassetid://14473354880',
-	['aerov4/assets/new/back.png'] = 'rbxassetid://14368303894',
-	['aerov4/assets/new/bind.png'] = 'rbxassetid://14368304734',
-	['aerov4/assets/new/bindbkg.png'] = 'rbxassetid://14368305655',
-	['aerov4/assets/new/blatanticon.png'] = 'rbxassetid://14368306745',
-	['aerov4/assets/new/blockedicon.png'] = 'rbxassetid://14385669108',
-	['aerov4/assets/new/blockedtab.png'] = 'rbxassetid://14385672881',
-	['aerov4/assets/new/blur.png'] = 'rbxassetid://14898786664',
-	['aerov4/assets/new/blurnotif.png'] = 'rbxassetid://16738720137',
-	['aerov4/assets/new/close.png'] = 'rbxassetid://14368309446',
-	['aerov4/assets/new/closemini.png'] = 'rbxassetid://14368310467',
-	['aerov4/assets/new/colorpreview.png'] = 'rbxassetid://14368311578',
-	['aerov4/assets/new/combaticon.png'] = 'rbxassetid://14368312652',
-	['aerov4/assets/new/customsettings.png'] = 'rbxassetid://14403726449',
-	['aerov4/assets/new/discord.png'] = '',
-	['aerov4/assets/new/dots.png'] = 'rbxassetid://14368314459',
-	['aerov4/assets/new/edit.png'] = 'rbxassetid://14368315443',
-	['aerov4/assets/new/expandicon.png'] = 'rbxassetid://14368353032',
-	['aerov4/assets/new/expandright.png'] = 'rbxassetid://14368316544',
-	['aerov4/assets/new/expandup.png'] = 'rbxassetid://14368317595',
-	['aerov4/assets/new/friendstab.png'] = 'rbxassetid://14397462778',
-	['aerov4/assets/new/guisettings.png'] = 'rbxassetid://14368318994',
-	['aerov4/assets/new/guislider.png'] = 'rbxassetid://14368320020',
-	['aerov4/assets/new/guisliderrain.png'] = 'rbxassetid://14368321228',
-	['aerov4/assets/new/guiv4.png'] = 'rbxassetid://14368322199',
-	['aerov4/assets/new/guivape.png'] = 'rbxassetid://14657521312',
-	['aerov4/assets/new/info.png'] = 'rbxassetid://14368324807',
-	['aerov4/assets/new/inventoryicon.png'] = 'rbxassetid://14928011633',
-	['aerov4/assets/new/legit.png'] = 'rbxassetid://14425650534',
-	['aerov4/assets/new/legittab.png'] = 'rbxassetid://14426740825',
-	['aerov4/assets/new/miniicon.png'] = 'rbxassetid://14368326029',
-	['aerov4/assets/new/notification.png'] = 'rbxassetid://16738721069',
-	['aerov4/assets/new/overlaysicon.png'] = 'rbxassetid://14368339581',
-	['aerov4/assets/new/overlaystab.png'] = 'rbxassetid://14397380433',
-	['aerov4/assets/new/pin.png'] = 'rbxassetid://14368342301',
-	['aerov4/assets/new/star.png'] = 'rbxassetid://14368342301',
-	['aerov4/assets/new/profilesicon.png'] = 'rbxassetid://14397465323',
-	['aerov4/assets/new/radaricon.png'] = 'rbxassetid://14368343291',
-	['aerov4/assets/new/rainbow_1.png'] = 'rbxassetid://14368344374',
-	['aerov4/assets/new/rainbow_2.png'] = 'rbxassetid://14368345149',
-	['aerov4/assets/new/rainbow_3.png'] = 'rbxassetid://14368345840',
-	['aerov4/assets/new/rainbow_4.png'] = 'rbxassetid://14368346696',
-	['aerov4/assets/new/range.png'] = 'rbxassetid://14368347435',
-	['aerov4/assets/new/rangearrow.png'] = 'rbxassetid://14368348640',
-	['aerov4/assets/new/rendericon.png'] = 'rbxassetid://14368350193',
-	['aerov4/assets/new/rendertab.png'] = 'rbxassetid://14397373458',
-	['aerov4/assets/new/search.png'] = 'rbxassetid://14425646684',
-	['aerov4/assets/new/targetinfoicon.png'] = 'rbxassetid://14368354234',
-	['aerov4/assets/new/targetnpc1.png'] = 'rbxassetid://14497400332',
-	['aerov4/assets/new/targetnpc2.png'] = 'rbxassetid://14497402744',
-	['aerov4/assets/new/targetplayers1.png'] = 'rbxassetid://14497396015',
-	['aerov4/assets/new/targetplayers2.png'] = 'rbxassetid://14497397862',
-	['aerov4/assets/new/targetstab.png'] = 'rbxassetid://14497393895',
-	['aerov4/assets/new/textguiicon.png'] = 'rbxassetid://14368355456',
-	['aerov4/assets/new/textv4.png'] = 'rbxassetid://14368357095',
-	['aerov4/assets/new/textvape.png'] = 'rbxassetid://14368358200',
-	['aerov4/assets/new/utilityicon.png'] = 'rbxassetid://14368359107',
-	['aerov4/assets/new/vape.png'] = 'rbxassetid://14373395239',
-	['aerov4/assets/new/warning.png'] = 'rbxassetid://14368361552',
-	['aerov4/assets/new/worldicon.png'] = 'rbxassetid://14368362492',
-	['aerov4/assets/new/eyeopen.png'] = 'rbxassetid://85547987939285',
-	['aerov4/assets/new/eyeclosed.png'] = 'rbxassetid://129675456133478'
+	['elevate/assets/new/add.png'] = 'rbxassetid://14368300605',
+	['elevate/assets/new/alert.png'] = 'rbxassetid://14368301329',
+	['elevate/assets/new/allowedicon.png'] = 'rbxassetid://14368302000',
+	['elevate/assets/new/allowedtab.png'] = 'rbxassetid://14368302875',
+	['elevate/assets/new/arrowmodule.png'] = 'rbxassetid://14473354880',
+	['elevate/assets/new/back.png'] = 'rbxassetid://14368303894',
+	['elevate/assets/new/bind.png'] = 'rbxassetid://14368304734',
+	['elevate/assets/new/bindbkg.png'] = 'rbxassetid://14368305655',
+	['elevate/assets/new/blatanticon.png'] = 'rbxassetid://14368306745',
+	['elevate/assets/new/blockedicon.png'] = 'rbxassetid://14385669108',
+	['elevate/assets/new/blockedtab.png'] = 'rbxassetid://14385672881',
+	['elevate/assets/new/blur.png'] = 'rbxassetid://14898786664',
+	['elevate/assets/new/blurnotif.png'] = 'rbxassetid://16738720137',
+	['elevate/assets/new/close.png'] = 'rbxassetid://14368309446',
+	['elevate/assets/new/closemini.png'] = 'rbxassetid://14368310467',
+	['elevate/assets/new/colorpreview.png'] = 'rbxassetid://14368311578',
+	['elevate/assets/new/combaticon.png'] = 'rbxassetid://14368312652',
+	['elevate/assets/new/customsettings.png'] = 'rbxassetid://14403726449',
+	['elevate/assets/new/discord.png'] = '',
+	['elevate/assets/new/dots.png'] = 'rbxassetid://14368314459',
+	['elevate/assets/new/edit.png'] = 'rbxassetid://14368315443',
+	['elevate/assets/new/expandicon.png'] = 'rbxassetid://14368353032',
+	['elevate/assets/new/expandright.png'] = 'rbxassetid://14368316544',
+	['elevate/assets/new/expandup.png'] = 'rbxassetid://14368317595',
+	['elevate/assets/new/friendstab.png'] = 'rbxassetid://14397462778',
+	['elevate/assets/new/guisettings.png'] = 'rbxassetid://14368318994',
+	['elevate/assets/new/guislider.png'] = 'rbxassetid://14368320020',
+	['elevate/assets/new/guisliderrain.png'] = 'rbxassetid://14368321228',
+	['elevate/assets/new/guiv4.png'] = 'rbxassetid://14368322199',
+	['elevate/assets/new/guivape.png'] = 'rbxassetid://14657521312',
+	['elevate/assets/new/info.png'] = 'rbxassetid://14368324807',
+	['elevate/assets/new/inventoryicon.png'] = 'rbxassetid://14928011633',
+	['elevate/assets/new/legit.png'] = 'rbxassetid://14425650534',
+	['elevate/assets/new/legittab.png'] = 'rbxassetid://14426740825',
+	['elevate/assets/new/miniicon.png'] = 'rbxassetid://14368326029',
+	['elevate/assets/new/notification.png'] = 'rbxassetid://16738721069',
+	['elevate/assets/new/overlaysicon.png'] = 'rbxassetid://14368339581',
+	['elevate/assets/new/overlaystab.png'] = 'rbxassetid://14397380433',
+	['elevate/assets/new/pin.png'] = 'rbxassetid://14368342301',
+	['elevate/assets/new/star.png'] = 'rbxassetid://14368342301',
+	['elevate/assets/new/profilesicon.png'] = 'rbxassetid://14397465323',
+	['elevate/assets/new/radaricon.png'] = 'rbxassetid://14368343291',
+	['elevate/assets/new/rainbow_1.png'] = 'rbxassetid://14368344374',
+	['elevate/assets/new/rainbow_2.png'] = 'rbxassetid://14368345149',
+	['elevate/assets/new/rainbow_3.png'] = 'rbxassetid://14368345840',
+	['elevate/assets/new/rainbow_4.png'] = 'rbxassetid://14368346696',
+	['elevate/assets/new/range.png'] = 'rbxassetid://14368347435',
+	['elevate/assets/new/rangearrow.png'] = 'rbxassetid://14368348640',
+	['elevate/assets/new/rendericon.png'] = 'rbxassetid://14368350193',
+	['elevate/assets/new/rendertab.png'] = 'rbxassetid://14397373458',
+	['elevate/assets/new/search.png'] = 'rbxassetid://14425646684',
+	['elevate/assets/new/targetinfoicon.png'] = 'rbxassetid://14368354234',
+	['elevate/assets/new/targetnpc1.png'] = 'rbxassetid://14497400332',
+	['elevate/assets/new/targetnpc2.png'] = 'rbxassetid://14497402744',
+	['elevate/assets/new/targetplayers1.png'] = 'rbxassetid://14497396015',
+	['elevate/assets/new/targetplayers2.png'] = 'rbxassetid://14497397862',
+	['elevate/assets/new/targetstab.png'] = 'rbxassetid://14497393895',
+	['elevate/assets/new/textguiicon.png'] = 'rbxassetid://14368355456',
+	['elevate/assets/new/textv4.png'] = 'rbxassetid://14368357095',
+	['elevate/assets/new/textvape.png'] = 'rbxassetid://14368358200',
+	['elevate/assets/new/utilityicon.png'] = 'rbxassetid://14368359107',
+	['elevate/assets/new/vape.png'] = 'rbxassetid://14373395239',
+	['elevate/assets/new/warning.png'] = 'rbxassetid://14368361552',
+	['elevate/assets/new/worldicon.png'] = 'rbxassetid://14368362492',
+	['elevate/assets/new/eyeopen.png'] = 'rbxassetid://85547987939285',
+	['elevate/assets/new/eyeclosed.png'] = 'rbxassetid://129675456133478'
 }
 
 local isfile = isfile or function(file)
@@ -139,7 +139,7 @@ local function safecall(func, ...)
 	xpcall(function()
 		func(unpack(args))
 	end, function(err)
-		warn("[AEROV4] GUI Error: "..err)
+		warn("[elevate] GUI Error: "..err)
 	end)
 end
 
@@ -183,7 +183,7 @@ local function addBlur(parent, notif)
 	blur.Size = UDim2.new(1, 89, 1, 52)
 	blur.Position = UDim2.fromOffset(-48, -31)
 	blur.BackgroundTransparency = 1
-	blur.Image = getcustomasset('aerov4/assets/new/'..(notif and 'blurnotif' or 'blur')..'.png')
+	blur.Image = getcustomasset('elevate/assets/new/'..(notif and 'blurnotif' or 'blur')..'.png')
 	blur.ScaleType = Enum.ScaleType.Slice
 	blur.SliceCenter = Rect.new(52, 31, 261, 502)
 	blur.Parent = parent
@@ -207,7 +207,7 @@ local function addCloseButton(parent, offset)
 	close.BackgroundColor3 = Color3.new(1, 1, 1)
 	close.BackgroundTransparency = 1
 	close.AutoButtonColor = false
-	close.Image = getcustomasset('aerov4/assets/new/close.png')
+	close.Image = getcustomasset('elevate/assets/new/close.png')
 	close.ImageColor3 = color.Light(uipallet.Text, 0.2)
 	close.ImageTransparency = 0.5
 	close.Parent = parent
@@ -553,7 +553,7 @@ local function openMobileEditor()
 	gearImg.Size = UDim2.fromOffset(20, 20)
 	gearImg.Position = UDim2.fromScale(0.5, 0.5)
 	gearImg.BackgroundTransparency = 1
-	gearImg.Image = getcustomasset('aerov4/assets/new/guisettings.png')
+	gearImg.Image = getcustomasset('elevate/assets/new/guisettings.png')
 	gearImg.ImageColor3 = vapeCol
 	gearImg.ZIndex = 26
 	gearImg.Parent = settingsBtn
@@ -932,7 +932,7 @@ local function openMobileEditor()
 	sbIcon.Size = UDim2.fromOffset(14, 14)
 	sbIcon.Position = UDim2.new(1, -22, 0.5, -7)
 	sbIcon.BackgroundTransparency = 1
-	sbIcon.Image = getcustomasset('aerov4/assets/new/search.png')
+	sbIcon.Image = getcustomasset('elevate/assets/new/search.png')
 	sbIcon.ImageColor3 = color.Dark(uipallet.Text, 0.35)
 	sbIcon.ZIndex = 22
 	sbIcon.Parent = searchPanel
@@ -1437,7 +1437,7 @@ local function downloadFile(path, func)
 	if not isfile(path) then
 		createDownloader(path)
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/'..readfile('aerov4/profiles/commit.txt')..'/'..select(1, path:gsub('aerov4/', '')), true)
+			return game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/'..readfile('elevate/profiles/commit.txt')..'/'..select(1, path:gsub('elevate/', '')), true)
 		end)
 		if not suc or res == '404: Not Found' then
 			error(res)
@@ -1451,13 +1451,13 @@ local function downloadFile(path, func)
 end
 
 local customAssets = {
-	['aerov4/assets/new/guivape.png'] = true,
-	['aerov4/assets/new/guiv4.png'] = true,
-	['aerov4/assets/new/textvape.png'] = true,
-	['aerov4/assets/new/textv4.png'] = true,
-	['aerov4/assets/new/vape.png'] = true,
-	['aerov4/assets/new/kiticon.png'] = true,
-	['aerov4/assets/new/legiticon.png'] = true
+	['elevate/assets/new/guivape.png'] = true,
+	['elevate/assets/new/guiv4.png'] = true,
+	['elevate/assets/new/textvape.png'] = true,
+	['elevate/assets/new/textv4.png'] = true,
+	['elevate/assets/new/vape.png'] = true,
+	['elevate/assets/new/kiticon.png'] = true,
+	['elevate/assets/new/legiticon.png'] = true
 }
 
 local customassetcache = {}
@@ -1465,7 +1465,7 @@ getcustomasset = function(path)
 	local cached = customassetcache[path]
 	if cached then return cached end
 	local result = ''
-	if assetfunction and (not inputService.TouchEnabled or path == 'aerov4/assets/new/eyeopen.png' or path == 'aerov4/assets/new/eyeclosed.png') then
+	if assetfunction and (not inputService.TouchEnabled or path == 'elevate/assets/new/eyeopen.png' or path == 'elevate/assets/new/eyeclosed.png') then
 		if isfile(path) or customAssets[path] then
 			local ok, res = pcall(downloadFile, path, assetfunction)
 			if ok and res and res ~= '' then result = res end
@@ -1597,7 +1597,7 @@ local function removeTags(str)
 end
 
 do
-	local res = isfile('aerov4/profiles/color.txt') and loadJson('aerov4/profiles/color.txt')
+	local res = isfile('elevate/profiles/color.txt') and loadJson('elevate/profiles/color.txt')
 	if res then
 		uipallet.Main = res.Main and Color3.fromRGB(unpack(res.Main)) or uipallet.Main
 		uipallet.Text = res.Text and Color3.fromRGB(unpack(res.Text)) or uipallet.Text
@@ -1949,7 +1949,7 @@ components = {
 		preview.Size = UDim2.fromOffset(12, 12)
 		preview.Position = UDim2.new(1, -22, 0, 10)
 		preview.BackgroundTransparency = 1
-		preview.Image = getcustomasset('aerov4/assets/new/colorpreview.png')
+		preview.Image = getcustomasset('elevate/assets/new/colorpreview.png')
 		preview.ImageColor3 = Color3.fromHSV(optionapi.Hue, optionapi.Sat, optionapi.Value)
 		preview.ImageTransparency = 1 - optionapi.Opacity
 		preview.Parent = slider
@@ -1965,7 +1965,7 @@ components = {
 		expand.Size = UDim2.fromOffset(9, 5)
 		expand.Position = UDim2.fromOffset(4, 4)
 		expand.BackgroundTransparency = 1
-		expand.Image = getcustomasset('aerov4/assets/new/expandicon.png')
+		expand.Image = getcustomasset('elevate/assets/new/expandicon.png')
 		expand.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		expand.Parent = expandbutton
 		local rainbow = Instance.new('TextButton')
@@ -1978,17 +1978,17 @@ components = {
 		local rainbow1 = Instance.new('ImageLabel')
 		rainbow1.Size = UDim2.fromOffset(12, 12)
 		rainbow1.BackgroundTransparency = 1
-		rainbow1.Image = getcustomasset('aerov4/assets/new/rainbow_1.png')
+		rainbow1.Image = getcustomasset('elevate/assets/new/rainbow_1.png')
 		rainbow1.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		rainbow1.Parent = rainbow
 		local rainbow2 = rainbow1:Clone()
-		rainbow2.Image = getcustomasset('aerov4/assets/new/rainbow_2.png')
+		rainbow2.Image = getcustomasset('elevate/assets/new/rainbow_2.png')
 		rainbow2.Parent = rainbow
 		local rainbow3 = rainbow1:Clone()
-		rainbow3.Image = getcustomasset('aerov4/assets/new/rainbow_3.png')
+		rainbow3.Image = getcustomasset('elevate/assets/new/rainbow_3.png')
 		rainbow3.Parent = rainbow
 		local rainbow4 = rainbow1:Clone()
-		rainbow4.Image = getcustomasset('aerov4/assets/new/rainbow_4.png')
+		rainbow4.Image = getcustomasset('elevate/assets/new/rainbow_4.png')
 		rainbow4.Parent = rainbow
 		local knobholder = Instance.new('Frame')
 		knobholder.Name = 'Knob'
@@ -2260,7 +2260,7 @@ components = {
 		arrow.Size = UDim2.fromOffset(4, 8)
 		arrow.Position = UDim2.new(1, -17, 0, 11)
 		arrow.BackgroundTransparency = 1
-		arrow.Image = getcustomasset('aerov4/assets/new/expandright.png')
+		arrow.Image = getcustomasset('elevate/assets/new/expandright.png')
 		arrow.ImageColor3 = Color3.fromRGB(140, 140, 140)
 		arrow.Rotation = 90
 		arrow.Parent = button
@@ -2319,7 +2319,7 @@ components = {
 				ddSearchIcon.Size = UDim2.fromOffset(11, 11)
 				ddSearchIcon.Position = UDim2.fromOffset(7, 8)
 				ddSearchIcon.BackgroundTransparency = 1
-				ddSearchIcon.Image = getcustomasset('aerov4/assets/new/search.png')
+				ddSearchIcon.Image = getcustomasset('elevate/assets/new/search.png')
 				ddSearchIcon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 				ddSearchIcon.Parent = ddSearchBar
 				local ddSearchBox = Instance.new('TextBox')
@@ -2724,7 +2724,7 @@ components = {
 		icon.Size = UDim2.fromOffset(18, 12)
 		icon.Position = UDim2.fromOffset(10, 15)
 		icon.BackgroundTransparency = 1
-		icon.Image = getcustomasset('aerov4/assets/new/targetstab.png')
+		icon.Image = getcustomasset('elevate/assets/new/targetstab.png')
 		icon.Parent = window
 		local title = Instance.new('TextLabel')
 		title.Name = 'Title'
@@ -2778,20 +2778,20 @@ components = {
 		
 		optionapi.Players = components.TargetsButton({
 			Position = UDim2.fromOffset(11, 45),
-			Icon = getcustomasset('aerov4/assets/new/targetplayers1.png'),
+			Icon = getcustomasset('elevate/assets/new/targetplayers1.png'),
 			IconSize = UDim2.fromOffset(15, 16),
 			IconParent = tool,
-			ToolIcon = getcustomasset('aerov4/assets/new/targetplayers2.png'),
+			ToolIcon = getcustomasset('elevate/assets/new/targetplayers2.png'),
 			ToolSize = UDim2.fromOffset(11, 12),
 			Tooltip = 'Players',
 			Function = optionsettings.Function
 		}, window, tool)
 		optionapi.NPCs = components.TargetsButton({
 			Position = UDim2.fromOffset(112, 45),
-			Icon = getcustomasset('aerov4/assets/new/targetnpc1.png'),
+			Icon = getcustomasset('elevate/assets/new/targetnpc1.png'),
 			IconSize = UDim2.fromOffset(12, 16),
 			IconParent = tool,
-			ToolIcon = getcustomasset('aerov4/assets/new/targetnpc2.png'),
+			ToolIcon = getcustomasset('elevate/assets/new/targetnpc2.png'),
 			ToolSize = UDim2.fromOffset(9, 12),
 			Tooltip = 'NPCs',
 			Function = optionsettings.Function
@@ -3075,7 +3075,7 @@ components = {
 		buttonicon.Size = UDim2.fromOffset(14, 12)
 		buttonicon.Position = UDim2.fromOffset(10, 14)
 		buttonicon.BackgroundTransparency = 1
-		buttonicon.Image = optionsettings.Icon or getcustomasset('aerov4/assets/new/allowedicon.png')
+		buttonicon.Image = optionsettings.Icon or getcustomasset('elevate/assets/new/allowedicon.png')
 		buttonicon.Parent = button
 		local buttontitle = Instance.new('TextLabel')
 		buttontitle.Name = 'Title'
@@ -3121,7 +3121,7 @@ components = {
 		icon.Size = optionsettings.TabSize or UDim2.fromOffset(19, 16)
 		icon.Position = UDim2.fromOffset(10, 13)
 		icon.BackgroundTransparency = 1
-		icon.Image = optionsettings.Tab or getcustomasset('aerov4/assets/new/allowedtab.png')
+		icon.Image = optionsettings.Tab or getcustomasset('elevate/assets/new/allowedtab.png')
 		icon.Parent = window
 		local title = Instance.new('TextLabel')
 		title.Name = 'Title'
@@ -3164,7 +3164,7 @@ components = {
 		addbutton.Size = UDim2.fromOffset(16, 16)
 		addbutton.Position = UDim2.new(1, -26, 0, 8)
 		addbutton.BackgroundTransparency = 1
-		addbutton.Image = getcustomasset('aerov4/assets/new/add.png')
+		addbutton.Image = getcustomasset('elevate/assets/new/add.png')
 		addbutton.ImageColor3 = optionsettings.Color
 		addbutton.ImageTransparency = 0.3
 		addbutton.Parent = addbkg
@@ -3180,7 +3180,7 @@ components = {
 		tlsearchicon.Size = UDim2.fromOffset(11, 11)
 		tlsearchicon.Position = UDim2.fromOffset(7, 8)
 		tlsearchicon.BackgroundTransparency = 1
-		tlsearchicon.Image = getcustomasset('aerov4/assets/new/search.png')
+		tlsearchicon.Image = getcustomasset('elevate/assets/new/search.png')
 		tlsearchicon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		tlsearchicon.Parent = tlsearchbar
 		local tlsearchbox = Instance.new('TextBox')
@@ -3323,7 +3323,7 @@ components = {
 				close.BackgroundColor3 = Color3.new(1, 1, 1)
 				close.BackgroundTransparency = 1
 				close.AutoButtonColor = false
-				close.Image = getcustomasset('aerov4/assets/new/closemini.png')
+				close.Image = getcustomasset('elevate/assets/new/closemini.png')
 				close.ImageColor3 = color.Light(uipallet.Text, 0.2)
 				close.ImageTransparency = 0.5
 				close.Parent = object
@@ -3629,7 +3629,7 @@ components = {
 		knob.Position = UDim2.fromScale(0.5, 0.5)
 		knob.AnchorPoint = Vector2.new(0.5, 0.5)
 		knob.BackgroundTransparency = 1
-		knob.Image = getcustomasset('aerov4/assets/new/range.png')
+		knob.Image = getcustomasset('elevate/assets/new/range.png')
 		knob.ImageColor3 = Color3.fromHSV(mainapi.GUIColor.Hue, mainapi.GUIColor.Sat, mainapi.GUIColor.Value)
 		knob.Parent = knobholder
 		local knobholdermax = knobholder:Clone()
@@ -3642,7 +3642,7 @@ components = {
 		arrow.Size = UDim2.fromOffset(12, 6)
 		arrow.Position = UDim2.new(1, -56, 0, 10)
 		arrow.BackgroundTransparency = 1
-		arrow.Image = getcustomasset('aerov4/assets/new/rangearrow.png')
+		arrow.Image = getcustomasset('elevate/assets/new/rangearrow.png')
 		arrow.ImageColor3 = color.Light(uipallet.Main, 0.14)
 		arrow.Parent = slider
 		optionsettings.Function = optionsettings.Function or function() end
@@ -3947,7 +3947,7 @@ function mainapi:CreateGUI()
 	logo.Size = UDim2.fromOffset(62, 18)
 	logo.Position = UDim2.fromOffset(11, 10)
 	logo.BackgroundTransparency = 1
-	logo.Image = getcustomasset('aerov4/assets/new/guivape.png')
+	logo.Image = getcustomasset('elevate/assets/new/guivape.png')
 	logo.ImageColor3 = select(3, uipallet.Main:ToHSV()) > 0.5 and uipallet.Text or Color3.new(1, 1, 1)
 	logo.Parent = window
 	local logov4 = Instance.new('ImageLabel')
@@ -3955,7 +3955,7 @@ function mainapi:CreateGUI()
 	logov4.Size = UDim2.fromOffset(28, 16)
 	logov4.Position = UDim2.new(1, 1, 0, 1)
 	logov4.BackgroundTransparency = 1
-	logov4.Image = getcustomasset('aerov4/assets/new/guiv4.png')
+	logov4.Image = getcustomasset('elevate/assets/new/guiv4.png')
 	logov4.Parent = logo
 	local children = Instance.new('Frame')
 	children.Name = 'Children'
@@ -3979,7 +3979,7 @@ function mainapi:CreateGUI()
 	settingsicon.Size = UDim2.fromOffset(14, 14)
 	settingsicon.Position = UDim2.fromOffset(15, 12)
 	settingsicon.BackgroundTransparency = 1
-	settingsicon.Image = getcustomasset('aerov4/assets/new/guisettings.png')
+	settingsicon.Image = getcustomasset('elevate/assets/new/guisettings.png')
 	settingsicon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 	settingsicon.Parent = settingsbutton
 	local settingspane = Instance.new('TextButton')
@@ -4006,7 +4006,7 @@ function mainapi:CreateGUI()
 	back.Size = UDim2.fromOffset(16, 16)
 	back.Position = UDim2.fromOffset(11, 13)
 	back.BackgroundTransparency = 1
-	back.Image = getcustomasset('aerov4/assets/new/back.png')
+	back.Image = getcustomasset('elevate/assets/new/back.png')
 	back.ImageColor3 = color.Light(uipallet.Main, 0.37)
 	back.Parent = settingspane
 	local settingsversion = Instance.new('TextLabel')
@@ -4015,7 +4015,7 @@ function mainapi:CreateGUI()
 	settingsversion.Position = UDim2.new(0, 0, 1, -16)
 	settingsversion.BackgroundTransparency = 1
 	settingsversion.Text = 'Vape '..mainapi.Version..' '..(
-		isfile('aerov4/profiles/commit.txt') and readfile('aerov4/profiles/commit.txt'):sub(1, 6) or ''
+		isfile('elevate/profiles/commit.txt') and readfile('elevate/profiles/commit.txt'):sub(1, 6) or ''
 	)..' '
 	settingsversion.TextColor3 = color.Dark(uipallet.Text, 0.43)
 	settingsversion.TextXAlignment = Enum.TextXAlignment.Right
@@ -4069,7 +4069,7 @@ function mainapi:CreateGUI()
 		icon.Size = UDim2.fromOffset(12, 12)
 		icon.Position = UDim2.new(0.5, -6, 0, 5)
 		icon.BackgroundTransparency = 1
-		icon.Image = getcustomasset('aerov4/assets/new/bind.png')
+		icon.Image = getcustomasset('elevate/assets/new/bind.png')
 		icon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		icon.Parent = bind
 		local label = Instance.new('TextLabel')
@@ -4103,13 +4103,13 @@ function mainapi:CreateGUI()
 		bind.MouseEnter:Connect(function()
 			label.Visible = false
 			icon.Visible = not label.Visible
-			icon.Image = getcustomasset('aerov4/assets/new/edit.png')
+			icon.Image = getcustomasset('elevate/assets/new/edit.png')
 			icon.ImageColor3 = color.Dark(uipallet.Text, 0.16)
 		end)
 		bind.MouseLeave:Connect(function()
 			label.Visible = true
 			icon.Visible = not label.Visible
-			icon.Image = getcustomasset('aerov4/assets/new/bind.png')
+			icon.Image = getcustomasset('elevate/assets/new/bind.png')
 			icon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		end)
 		bind.MouseButton1Click:Connect(function()
@@ -4186,7 +4186,7 @@ function mainapi:CreateGUI()
 		arrow.Size = UDim2.fromOffset(4, 8)
 		arrow.Position = UDim2.new(1, -20, 0, 16)
 		arrow.BackgroundTransparency = 1
-		arrow.Image = getcustomasset('aerov4/assets/new/expandright.png')
+		arrow.Image = getcustomasset('elevate/assets/new/expandright.png')
 		arrow.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		arrow.Parent = button
 		optionapi.Name = categorysettings.Name
@@ -4265,7 +4265,7 @@ function mainapi:CreateGUI()
 		button.Position = UDim2.new(1, -29, 0, 7)
 		button.BackgroundTransparency = 1
 		button.AutoButtonColor = false
-		button.Image = getcustomasset('aerov4/assets/new/overlaysicon.png')
+		button.Image = getcustomasset('elevate/assets/new/overlaysicon.png')
 		button.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		button.Parent = bar
 		addCorner(button, UDim.new(1, 0))
@@ -4292,7 +4292,7 @@ function mainapi:CreateGUI()
 		icon.Size = UDim2.fromOffset(14, 12)
 		icon.Position = UDim2.fromOffset(10, 13)
 		icon.BackgroundTransparency = 1
-		icon.Image = getcustomasset('aerov4/assets/new/overlaystab.png')
+		icon.Image = getcustomasset('elevate/assets/new/overlaystab.png')
 		icon.ImageColor3 = uipallet.Text
 		icon.Parent = window
 		local title = Instance.new('TextLabel')
@@ -4482,7 +4482,7 @@ function mainapi:CreateGUI()
 		arrow.Size = UDim2.fromOffset(4, 8)
 		arrow.Position = UDim2.new(1, -20, 0, 16)
 		arrow.BackgroundTransparency = 1
-		arrow.Image = getcustomasset('aerov4/assets/new/expandright.png')
+		arrow.Image = getcustomasset('elevate/assets/new/expandright.png')
 		arrow.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		arrow.Parent = button
 		local settingspane = Instance.new('TextButton')
@@ -4509,7 +4509,7 @@ function mainapi:CreateGUI()
 		back.Size = UDim2.fromOffset(16, 16)
 		back.Position = UDim2.fromOffset(11, 13)
 		back.BackgroundTransparency = 1
-		back.Image = getcustomasset('aerov4/assets/new/back.png')
+		back.Image = getcustomasset('elevate/assets/new/back.png')
 		back.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		back.Parent = settingspane
 		addCorner(settingspane)
@@ -4757,7 +4757,7 @@ function mainapi:CreateGUI()
 		preview.Size = UDim2.fromOffset(12, 12)
 		preview.Position = UDim2.new(1, -22, 0, 10)
 		preview.BackgroundTransparency = 1
-		preview.Image = getcustomasset('aerov4/assets/new/colorpreview.png')
+		preview.Image = getcustomasset('elevate/assets/new/colorpreview.png')
 		preview.ImageColor3 = Color3.fromHSV(optionapi.Hue, 1, 1)
 		preview.Parent = slider
 		local valuebox = Instance.new('TextBox')
@@ -4785,7 +4785,7 @@ function mainapi:CreateGUI()
 		expandicon.Size = UDim2.fromOffset(9, 5)
 		expandicon.Position = UDim2.fromOffset(4, 4)
 		expandicon.BackgroundTransparency = 1
-		expandicon.Image = getcustomasset('aerov4/assets/new/expandicon.png')
+		expandicon.Image = getcustomasset('elevate/assets/new/expandicon.png')
 		expandicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		expandicon.Parent = expandbutton
 		local rainbow = Instance.new('TextButton')
@@ -4798,24 +4798,24 @@ function mainapi:CreateGUI()
 		local rainbow1 = Instance.new('ImageLabel')
 		rainbow1.Size = UDim2.fromOffset(12, 12)
 		rainbow1.BackgroundTransparency = 1
-		rainbow1.Image = getcustomasset('aerov4/assets/new/rainbow_1.png')
+		rainbow1.Image = getcustomasset('elevate/assets/new/rainbow_1.png')
 		rainbow1.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		rainbow1.Parent = rainbow
 		local rainbow2 = rainbow1:Clone()
-		rainbow2.Image = getcustomasset('aerov4/assets/new/rainbow_2.png')
+		rainbow2.Image = getcustomasset('elevate/assets/new/rainbow_2.png')
 		rainbow2.Parent = rainbow
 		local rainbow3 = rainbow1:Clone()
-		rainbow3.Image = getcustomasset('aerov4/assets/new/rainbow_3.png')
+		rainbow3.Image = getcustomasset('elevate/assets/new/rainbow_3.png')
 		rainbow3.Parent = rainbow
 		local rainbow4 = rainbow1:Clone()
-		rainbow4.Image = getcustomasset('aerov4/assets/new/rainbow_4.png')
+		rainbow4.Image = getcustomasset('elevate/assets/new/rainbow_4.png')
 		rainbow4.Parent = rainbow
 		local knob = Instance.new('ImageLabel')
 		knob.Name = 'Knob'
 		knob.Size = UDim2.fromOffset(26, 12)
 		knob.Position = UDim2.fromOffset(slidercolorpos[4] - 3, -5)
 		knob.BackgroundTransparency = 1
-		knob.Image = getcustomasset('aerov4/assets/new/guislider.png')
+		knob.Image = getcustomasset('elevate/assets/new/guislider.png')
 		knob.ImageColor3 = slidercolors[4]
 		knob.Parent = holder
 		optionsettings.Function = optionsettings.Function or function() end
@@ -4832,8 +4832,8 @@ function mainapi:CreateGUI()
 			ColorSequenceKeypoint.new(0, Color3.fromHSV(0, 0, 0)),
 			ColorSequenceKeypoint.new(1, Color3.fromHSV(optionapi.Hue, optionapi.Sat, 1))
 		}))
-		local normalknob = getcustomasset('aerov4/assets/new/guislider.png')
-		local rainbowknob = getcustomasset('aerov4/assets/new/guisliderrain.png')
+		local normalknob = getcustomasset('elevate/assets/new/guislider.png')
+		local rainbowknob = getcustomasset('elevate/assets/new/guisliderrain.png')
 		local rainbowthread
 
 		function optionapi:Save(tab)
@@ -5158,7 +5158,7 @@ function mainapi:CreateCategory(categorysettings)
 	pencil.Size = UDim2.fromOffset(16, 16)
 	pencil.Position = UDim2.fromOffset(6, 12)
 	pencil.BackgroundTransparency = 1
-	pencil.Image = getcustomasset('aerov4/assets/new/edit.png')
+	pencil.Image = getcustomasset('elevate/assets/new/edit.png')
 	pencil.ImageColor3 = Color3.fromRGB(190, 190, 190)
 	pencil.ZIndex = editbutton.ZIndex + 1
 	pencil.Parent = editbutton
@@ -5224,7 +5224,7 @@ function mainapi:CreateCategory(categorysettings)
 	arrow.Size = UDim2.fromOffset(9, 4)
 	arrow.Position = UDim2.fromOffset(9, 18)
 	arrow.BackgroundTransparency = 1
-	arrow.Image = getcustomasset('aerov4/assets/new/expandup.png')
+	arrow.Image = getcustomasset('elevate/assets/new/expandup.png')
 	arrow.ImageColor3 = Color3.fromRGB(140, 140, 140)
 	arrow.Rotation = 180
 	arrow.Parent = arrowbutton
@@ -5324,7 +5324,7 @@ function mainapi:CreateCategory(categorysettings)
 		bindicon.Size = UDim2.fromOffset(12, 12)
 		bindicon.Position = UDim2.new(0.5, -6, 0, 5)
 		bindicon.BackgroundTransparency = 1
-		bindicon.Image = getcustomasset('aerov4/assets/new/bind.png')
+		bindicon.Image = getcustomasset('elevate/assets/new/bind.png')
 		bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		bindicon.Parent = bind
 		local bindtext = Instance.new('TextLabel')
@@ -5342,7 +5342,7 @@ function mainapi:CreateCategory(categorysettings)
 		bindcover.Size = UDim2.fromOffset(154, 40)
 		bindcover.BackgroundTransparency = 1
 		bindcover.Visible = false
-		bindcover.Image = getcustomasset('aerov4/assets/new/bindbkg.png')
+		bindcover.Image = getcustomasset('elevate/assets/new/bindbkg.png')
 		bindcover.ScaleType = Enum.ScaleType.Slice
 		bindcover.SliceCenter = Rect.new(0, 0, 141, 40)
 		bindcover.Parent = modulebutton
@@ -5365,14 +5365,14 @@ function mainapi:CreateCategory(categorysettings)
 			tooltip.Visible = true
 			bindtext.Visible = false
 			bindicon.Visible = true
-			bindicon.Image = getcustomasset('aerov4/assets/new/edit.png')
+			bindicon.Image = getcustomasset('elevate/assets/new/edit.png')
 			if not moduleapi.Enabled then bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.16) end
 		end)
 		bind.MouseLeave:Connect(function()
 			tooltip.Visible = false
 			bindtext.Visible = #moduleapi.Bind > 0
 			bindicon.Visible = not bindtext.Visible
-			bindicon.Image = getcustomasset('aerov4/assets/new/bind.png')
+			bindicon.Image = getcustomasset('elevate/assets/new/bind.png')
 			if not moduleapi.Enabled then
 				bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 			end
@@ -5397,7 +5397,7 @@ function mainapi:CreateCategory(categorysettings)
 		pinicon.Size = UDim2.fromOffset(12, 12)
 		pinicon.Position = UDim2.new(0.5, -6, 0, 5)
 		pinicon.BackgroundTransparency = 1
-		pinicon.Image = getcustomasset('aerov4/assets/new/star.png')
+		pinicon.Image = getcustomasset('elevate/assets/new/star.png')
 		pinicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 		pinicon.Parent = pinbutton
 		pinbutton.Parent = modulebutton
@@ -5711,7 +5711,7 @@ function mainapi:CreateCategory(categorysettings)
 		dots.Size = UDim2.fromOffset(3, 16)
 		dots.Position = UDim2.fromOffset(4, 12)
 		dots.BackgroundTransparency = 1
-		dots.Image = getcustomasset('aerov4/assets/new/dots.png')
+		dots.Image = getcustomasset('elevate/assets/new/dots.png')
 		dots.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		dots.Parent = dotsbutton
 		local shadow = Instance.new('TextButton')
@@ -5737,7 +5737,7 @@ function mainapi:CreateCategory(categorysettings)
 		searchIcon.Size = UDim2.fromOffset(12, 12)
 		searchIcon.Position = UDim2.fromOffset(8, 9)
 		searchIcon.BackgroundTransparency = 1
-		searchIcon.Image = getcustomasset('aerov4/assets/new/search.png')
+		searchIcon.Image = getcustomasset('elevate/assets/new/search.png')
 		searchIcon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		searchIcon.Parent = searchBarFrame
 		local searchBox = Instance.new('TextBox')
@@ -5807,7 +5807,7 @@ function mainapi:CreateCategory(categorysettings)
 		eyeIcon.Position = UDim2.fromOffset(4, 7)
 		eyeIcon.BackgroundTransparency = 1
 		eyeIcon.ScaleType = Enum.ScaleType.Fit
-		eyeIcon.Image = getcustomasset('aerov4/assets/new/eyeopen.png')
+		eyeIcon.Image = getcustomasset('elevate/assets/new/eyeopen.png')
 		eyeIcon.ImageColor3 = Color3.fromRGB(235, 235, 235)
 		eyeIcon.ZIndex = eyeButton.ZIndex + 1
 		eyeIcon.Parent = eyeButton
@@ -5842,7 +5842,7 @@ function mainapi:CreateCategory(categorysettings)
 			moduleTitle.Size = UDim2.new(1, editing and -84 or -47, 1, 0)
 			moduleTitle.TextTransparency = editing and self.Visible == false and 0.45 or 0
 			eyeButton.Visible = editing
-			eyeIcon.Image = getcustomasset('aerov4/assets/new/'..(self.Visible == false and 'eyeclosed.png' or 'eyeopen.png'))
+			eyeIcon.Image = getcustomasset('elevate/assets/new/'..(self.Visible == false and 'eyeclosed.png' or 'eyeopen.png'))
 			eyeIcon.ImageColor3 = self.Visible == false and Color3.fromRGB(155, 155, 155) or Color3.fromRGB(235, 235, 235)
 			if favbutton then
 				favbutton.Visible = editing or self.Visible ~= false
@@ -5982,7 +5982,7 @@ function mainapi:CreateCategory(categorysettings)
 			resetCover.Name = 'ResetCover'
 			resetCover.Size = UDim2.fromOffset(180, 40)
 			resetCover.BackgroundTransparency = 1
-			resetCover.Image = getcustomasset('aerov4/assets/new/bindbkg.png')
+			resetCover.Image = getcustomasset('elevate/assets/new/bindbkg.png')
 			resetCover.ScaleType = Enum.ScaleType.Slice
 			resetCover.SliceCenter = Rect.new(0, 0, 141, 40)
 			resetCover.Parent = modulebutton
@@ -6238,7 +6238,7 @@ function mainapi:CreateOverlay(categorysettings)
 	pin.Position = UDim2.new(1, -47, 0, 12)
 	pin.BackgroundTransparency = 1
 	pin.AutoButtonColor = false
-	pin.Image = getcustomasset('aerov4/assets/new/pin.png')
+	pin.Image = getcustomasset('elevate/assets/new/pin.png')
 	pin.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 	pin.Parent = window
 	local dotsbutton = Instance.new('TextButton')
@@ -6253,7 +6253,7 @@ function mainapi:CreateOverlay(categorysettings)
 	dots.Size = UDim2.fromOffset(3, 16)
 	dots.Position = UDim2.fromOffset(4, 12)
 	dots.BackgroundTransparency = 1
-	dots.Image = getcustomasset('aerov4/assets/new/dots.png')
+	dots.Image = getcustomasset('elevate/assets/new/dots.png')
 	dots.ImageColor3 = color.Light(uipallet.Main, 0.37)
 	dots.Parent = dotsbutton
 	local customchildren = Instance.new('Frame')
@@ -6423,7 +6423,7 @@ function mainapi:CreateCategoryList(categorysettings)
 	arrow.Size = UDim2.fromOffset(9, 4)
 	arrow.Position = UDim2.fromOffset(20, 19)
 	arrow.BackgroundTransparency = 1
-	arrow.Image = getcustomasset('aerov4/assets/new/expandup.png')
+	arrow.Image = getcustomasset('elevate/assets/new/expandup.png')
 	arrow.ImageColor3 = Color3.fromRGB(140, 140, 140)
 	arrow.Rotation = 180
 	arrow.Parent = arrowbutton
@@ -6450,7 +6450,7 @@ function mainapi:CreateCategoryList(categorysettings)
 	settings.Position = UDim2.new(1, -52, 0, 13)
 	settings.BackgroundTransparency = 1
 	settings.AutoButtonColor = false
-	settings.Image = getcustomasset('aerov4/assets/new/customsettings.png')
+	settings.Image = getcustomasset('elevate/assets/new/customsettings.png')
 	settings.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 	settings.Parent = window
 	local divider = Instance.new('Frame')
@@ -6505,7 +6505,7 @@ function mainapi:CreateCategoryList(categorysettings)
 	addbutton.Size = UDim2.fromOffset(16, 16)
 	addbutton.Position = UDim2.new(1, -26, 0, 8)
 	addbutton.BackgroundTransparency = 1
-	addbutton.Image = getcustomasset('aerov4/assets/new/add.png')
+	addbutton.Image = getcustomasset('elevate/assets/new/add.png')
 	addbutton.ImageColor3 = categorysettings.Color
 	addbutton.ImageTransparency = 0.3
 	addbutton.Parent = addbkg
@@ -6522,9 +6522,9 @@ function mainapi:CreateCategoryList(categorysettings)
 			mainapi:Save()
 		end
 		pcall(function()
-			local from = 'aerov4/profiles/'..old..mainapi.Place..'.txt'
+			local from = 'elevate/profiles/'..old..mainapi.Place..'.txt'
 			if isfile(from) then
-				writefile('aerov4/profiles/'..new..mainapi.Place..'.txt', readfile(from))
+				writefile('elevate/profiles/'..new..mainapi.Place..'.txt', readfile(from))
 				if delfile then
 					delfile(from)
 				end
@@ -6623,9 +6623,9 @@ function mainapi:CreateCategoryList(categorysettings)
 			if v.Name == mainapi.Profile then
 				mainapi:Save()
 			end
-			local from = 'aerov4/profiles/'..v.Name..mainapi.Place..'.txt'
+			local from = 'elevate/profiles/'..v.Name..mainapi.Place..'.txt'
 			if isfile(from) then
-				pcall(writefile, 'aerov4/profiles/'..name..mainapi.Place..'.txt', readfile(from))
+				pcall(writefile, 'elevate/profiles/'..name..mainapi.Place..'.txt', readfile(from))
 			end
 			categoryapi:ChangeValue(name)
 			mainapi:Save()
@@ -6752,9 +6752,9 @@ function mainapi:CreateCategoryList(categorysettings)
 			if v.Name == mainapi.Profile then
 				mainapi:Save()
 			end
-			local from = 'aerov4/profiles/'..v.Name..mainapi.Place..'.txt'
+			local from = 'elevate/profiles/'..v.Name..mainapi.Place..'.txt'
 			if isfile(from) then
-				pcall(writefile, 'aerov4/profiles/'..name..mainapi.Place..'.txt', readfile(from))
+				pcall(writefile, 'elevate/profiles/'..name..mainapi.Place..'.txt', readfile(from))
 			end
 			categoryapi:ChangeValue(name)
 			mainapi:Save()
@@ -6818,13 +6818,13 @@ function mainapi:CreateCategoryList(categorysettings)
 				if ind then
 					if val ~= 'default' then
 						table.remove(mainapi.Profiles, ind)
-						if isfile('aerov4/profiles/'..val..mainapi.Place..'.txt') and delfile then
-							delfile('aerov4/profiles/'..val..mainapi.Place..'.txt')
+						if isfile('elevate/profiles/'..val..mainapi.Place..'.txt') and delfile then
+							delfile('elevate/profiles/'..val..mainapi.Place..'.txt')
 						end
 					end
 				else
 					table.insert(mainapi.Profiles, {Name = val, Bind = {}})
-					local path = 'aerov4/profiles/'..val..mainapi.Place..'.txt'
+					local path = 'elevate/profiles/'..val..mainapi.Place..'.txt'
 					if not isfile(path) and mainapi.DefaultProfileData then
 						pcall(function()
 							writefile(path, httpService:JSONEncode(mainapi.DefaultProfileData))
@@ -6891,7 +6891,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				dots.Size = UDim2.fromOffset(3, 16)
 				dots.Position = UDim2.fromOffset(10, 11)
 				dots.BackgroundTransparency = 1
-				dots.Image = getcustomasset('aerov4/assets/new/dots.png')
+				dots.Image = getcustomasset('elevate/assets/new/dots.png')
 				dots.ImageColor3 = color.Light(uipallet.Main, 0.37)
 				dots.Parent = dotsbutton
 				local bind = Instance.new('TextButton')
@@ -6912,7 +6912,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				bindicon.Size = UDim2.fromOffset(12, 12)
 				bindicon.Position = UDim2.new(0.5, -6, 0, 5)
 				bindicon.BackgroundTransparency = 1
-				bindicon.Image = getcustomasset('aerov4/assets/new/bind.png')
+				bindicon.Image = getcustomasset('elevate/assets/new/bind.png')
 				bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 				bindicon.Parent = bind
 				local bindtext = Instance.new('TextLabel')
@@ -6928,7 +6928,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				bind.MouseEnter:Connect(function()
 					bindtext.Visible = false
 					bindicon.Visible = not bindtext.Visible
-					bindicon.Image = getcustomasset('aerov4/assets/new/edit.png')
+					bindicon.Image = getcustomasset('elevate/assets/new/edit.png')
 					if v.Name ~= mainapi.Profile then
 						bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.16)
 					end
@@ -6936,7 +6936,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				bind.MouseLeave:Connect(function()
 					bindtext.Visible = #v.Bind > 0
 					bindicon.Visible = not bindtext.Visible
-					bindicon.Image = getcustomasset('aerov4/assets/new/bind.png')
+					bindicon.Image = getcustomasset('elevate/assets/new/bind.png')
 					if v.Name ~= mainapi.Profile then
 						bindicon.ImageColor3 = color.Dark(uipallet.Text, 0.43)
 					end
@@ -6946,7 +6946,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				bindcover.Size = UDim2.fromOffset(154, 38)
 				bindcover.BackgroundTransparency = 1
 				bindcover.Visible = false
-				bindcover.Image = getcustomasset('aerov4/assets/new/bindbkg.png')
+				bindcover.Image = getcustomasset('elevate/assets/new/bindbkg.png')
 				bindcover.ScaleType = Enum.ScaleType.Slice
 				bindcover.SliceCenter = Rect.new(0, 0, 141, 40)
 				bindcover.Parent = object
@@ -7080,7 +7080,7 @@ function mainapi:CreateCategoryList(categorysettings)
 				close.BackgroundColor3 = Color3.new(1, 1, 1)
 				close.BackgroundTransparency = 1
 				close.AutoButtonColor = false
-				close.Image = getcustomasset('aerov4/assets/new/closemini.png')
+				close.Image = getcustomasset('elevate/assets/new/closemini.png')
 				close.ImageColor3 = color.Light(uipallet.Text, 0.2)
 				close.ImageTransparency = 0.5
 				close.Parent = object
@@ -7259,7 +7259,7 @@ function mainapi:CreateSearch()
 	searchicon.Size = UDim2.fromOffset(14, 14)
 	searchicon.Position = UDim2.new(1, -23, 0, 11)
 	searchicon.BackgroundTransparency = 1
-	searchicon.Image = getcustomasset('aerov4/assets/new/search.png')
+	searchicon.Image = getcustomasset('elevate/assets/new/search.png')
 	searchicon.ImageColor3 = color.Light(uipallet.Main, 0.37)
 	searchicon.Parent = searchbkg
 	addBlur(searchbkg)
@@ -7527,7 +7527,7 @@ function mainapi:CreateLegit()
 	icon.Size = UDim2.fromOffset(16, 16)
 	icon.Position = UDim2.fromOffset(18, 13)
 	icon.BackgroundTransparency = 1
-	icon.Image = getcustomasset('aerov4/assets/new/legittab.png')
+	icon.Image = getcustomasset('elevate/assets/new/legittab.png')
 	icon.ImageColor3 = uipallet.Text
 	icon.Parent = window
 	local close = addCloseButton(window)
@@ -7602,7 +7602,7 @@ function mainapi:CreateLegit()
 		dots.Size = UDim2.fromOffset(2, 12)
 		dots.Position = UDim2.fromOffset(6, 6)
 		dots.BackgroundTransparency = 1
-		dots.Image = getcustomasset('aerov4/assets/new/dots.png')
+		dots.Image = getcustomasset('elevate/assets/new/dots.png')
 		dots.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		dots.Parent = dotsbutton
 		local shadow = Instance.new('TextButton')
@@ -7639,7 +7639,7 @@ function mainapi:CreateLegit()
 		back.Size = UDim2.fromOffset(16, 16)
 		back.Position = UDim2.fromOffset(11, 13)
 		back.BackgroundTransparency = 1
-		back.Image = getcustomasset('aerov4/assets/new/back.png')
+		back.Image = getcustomasset('elevate/assets/new/back.png')
 		back.ImageColor3 = color.Light(uipallet.Main, 0.37)
 		back.Parent = settingspane
 		addCorner(settingspane)
@@ -7869,7 +7869,7 @@ function mainapi:CreateNotification(title, text, duration, type)
 		notification.Position = notifPosition(corner, #notifStack)
 		notification.ZIndex = 5
 		notification.BackgroundTransparency = 1
-		notification.Image = getcustomasset('aerov4/assets/new/notification.png')
+		notification.Image = getcustomasset('elevate/assets/new/notification.png')
 		notification.ScaleType = Enum.ScaleType.Slice
 		notification.SliceCenter = Rect.new(7, 7, 9, 9)
 		notification.Parent = notifications
@@ -7910,7 +7910,7 @@ function mainapi:CreateNotification(title, text, duration, type)
 		iconshadow.Position = UDim2.fromOffset(-5, -8)
 		iconshadow.ZIndex = 5
 		iconshadow.BackgroundTransparency = 1
-		iconshadow.Image = getcustomasset('aerov4/assets/new/'..(type or 'info')..'.png')
+		iconshadow.Image = getcustomasset('elevate/assets/new/'..(type or 'info')..'.png')
 		iconshadow.ImageColor3 = Color3.new()
 		iconshadow.ImageTransparency = 0.5
 		iconshadow.Parent = notification
@@ -8002,8 +8002,8 @@ function mainapi:Load(skipgui, profile)
 	end
 
 	local guidata = {Categories = {}}
-	local guiFile = 'aerov4/profiles/'..self.Place..'.gui.txt'
-	local sharedGuiFile = 'aerov4/profiles/'..game.GameId..'.gui.txt'
+	local guiFile = 'elevate/profiles/'..self.Place..'.gui.txt'
+	local sharedGuiFile = 'elevate/profiles/'..game.GameId..'.gui.txt'
 	if not isfile(guiFile) and guiFile ~= sharedGuiFile and isfile(sharedGuiFile) then
 		pcall(function()
 			writefile(guiFile, readfile(sharedGuiFile))
@@ -8015,7 +8015,7 @@ function mainapi:Load(skipgui, profile)
 		if result then
 			guidata = result
 		else
-			self:CreateNotification('aerov4', 'Failed to load GUI settings. Using defaults.', 10, 'alert')
+			self:CreateNotification('elevate', 'Failed to load GUI settings. Using defaults.', 10, 'alert')
 		end
 
 		if guidata.MobileSettings then
@@ -8103,7 +8103,7 @@ function mainapi:Load(skipgui, profile)
 		self.DefaultProfileData = blank
 	end
 
-	local profileFile = 'aerov4/profiles/'..self.Profile..self.Place..'.txt'
+	local profileFile = 'elevate/profiles/'..self.Profile..self.Place..'.txt'
 	local savedata = { Categories = {}, Modules = {}, Legit = {} }
 
 	if isfile(profileFile) or isfile(profileFile..'.bak') then
@@ -8111,10 +8111,10 @@ function mainapi:Load(skipgui, profile)
 		if result then
 			savedata = result
 		else
-			self:CreateNotification('aerov4', 'Failed to load '..self.Profile..' profile. Creating a new one.', 10, 'alert')
+			self:CreateNotification('elevate', 'Failed to load '..self.Profile..' profile. Creating a new one.', 10, 'alert')
 		end
 	else
-		self:CreateNotification('aerov4', 'No profile found. Creating new profile for '..self.Profile, 8, 'info')
+		self:CreateNotification('elevate', 'No profile found. Creating new profile for '..self.Profile, 8, 'info')
 	end
 
 	for i, v in savedata.Categories or {} do
@@ -8274,7 +8274,7 @@ function mainapi:Load(skipgui, profile)
 		image.Size = UDim2.fromOffset(26, 26)
 		image.Position = UDim2.fromOffset(3, 3)
 		image.BackgroundTransparency = 1
-		image.Image = getcustomasset('aerov4/assets/new/vape.png')
+		image.Image = getcustomasset('elevate/assets/new/vape.png')
 		image.Parent = button
 		local buttoncorner = Instance.new('UICorner')
 		buttoncorner.Parent = button
@@ -8376,7 +8376,7 @@ function mainapi:Save(newprofile)
 	end
 
 	guidata.Positions = {}
-	local oldgui = isfile('aerov4/profiles/'..self.Place..'.gui.txt') and loadJson('aerov4/profiles/'..self.Place..'.gui.txt')
+	local oldgui = isfile('elevate/profiles/'..self.Place..'.gui.txt') and loadJson('elevate/profiles/'..self.Place..'.gui.txt')
 	if type(oldgui) == 'table' then
 		for i, v in oldgui.Categories or {} do
 			if not self.Categories[i] then
@@ -8430,8 +8430,8 @@ function mainapi:Save(newprofile)
 		}
 	end
 
-	safeWrite('aerov4/profiles/' .. self.Place .. '.gui.txt', httpService:JSONEncode(guidata))
-	safeWrite('aerov4/profiles/' .. self.Profile .. self.Place .. '.txt', httpService:JSONEncode(savedata))
+	safeWrite('elevate/profiles/' .. self.Place .. '.gui.txt', httpService:JSONEncode(guidata))
+	safeWrite('elevate/profiles/' .. self.Profile .. self.Place .. '.txt', httpService:JSONEncode(savedata))
 end
 
 function mainapi:SaveOptions(object, savedoptions)
@@ -8524,7 +8524,7 @@ local scarcitybanner = Instance.new('TextLabel')
 scarcitybanner.Size = UDim2.fromScale(1, 0.02)
 scarcitybanner.Position = UDim2.fromScale(0, 0.97)
 scarcitybanner.BackgroundTransparency = 1
-scarcitybanner.Text = 'shitty ass aerov4 script gang gang'
+scarcitybanner.Text = 'shitty ass elevate script gang gang'
 scarcitybanner.TextScaled = true
 scarcitybanner.TextColor3 = Color3.new(1, 1, 1)
 scarcitybanner.TextStrokeTransparency = 0.5
@@ -8618,55 +8618,55 @@ mainapi:CreateGUI()
 mainapi.Categories.Main:CreateDivider()
 mainapi:CreateCategory({
 	Name = 'Favorites',
-	Icon = getcustomasset('aerov4/assets/new/star.png'),
+	Icon = getcustomasset('elevate/assets/new/star.png'),
 	Size = UDim2.fromOffset(15, 15)
 })
 
 mainapi:CreateCategory({
 	Name = 'Combat',
-	Icon = getcustomasset('aerov4/assets/new/combaticon.png'),
+	Icon = getcustomasset('elevate/assets/new/combaticon.png'),
 	Size = UDim2.fromOffset(13, 14)
 })
 mainapi:CreateCategory({
 	Name = 'Blatant',
-	Icon = getcustomasset('aerov4/assets/new/blatanticon.png'),
+	Icon = getcustomasset('elevate/assets/new/blatanticon.png'),
 	Size = UDim2.fromOffset(14, 14)
 })
 mainapi:CreateCategory({
 	Name = 'Render',
-	Icon = getcustomasset('aerov4/assets/new/rendericon.png'),
+	Icon = getcustomasset('elevate/assets/new/rendericon.png'),
 	Size = UDim2.fromOffset(15, 14)
 })
 mainapi:CreateCategory({
 	Name = 'Utility',
-	Icon = getcustomasset('aerov4/assets/new/utilityicon.png'),
+	Icon = getcustomasset('elevate/assets/new/utilityicon.png'),
 	Size = UDim2.fromOffset(15, 14)
 })
 mainapi:CreateCategory({
 	Name = 'World',
-	Icon = getcustomasset('aerov4/assets/new/worldicon.png'),
+	Icon = getcustomasset('elevate/assets/new/worldicon.png'),
 	Size = UDim2.fromOffset(14, 14)
 })
 if game.GameId == 2619619496 and game.PlaceId ~= 6872265039 then
 	mainapi:CreateCategory({
 		Name = 'Kits',
-		Icon = getcustomasset('aerov4/assets/new/kiticon.png'),
+		Icon = getcustomasset('elevate/assets/new/kiticon.png'),
 		Size = UDim2.fromOffset(15, 15)
 	})
 end
 mainapi:CreateCategory({
 	Name = 'Inventory',
-	Icon = getcustomasset('aerov4/assets/new/inventoryicon.png'),
+	Icon = getcustomasset('elevate/assets/new/inventoryicon.png'),
 	Size = UDim2.fromOffset(15, 14)
 })
 mainapi:CreateCategory({
 	Name = 'Minigames',
-	Icon = getcustomasset('aerov4/assets/new/miniicon.png'),
+	Icon = getcustomasset('elevate/assets/new/miniicon.png'),
 	Size = UDim2.fromOffset(19, 12)
 })
 mainapi:CreateCategory({
 	Name = 'Legit',
-	Icon = getcustomasset('aerov4/assets/new/legiticon.png'),
+	Icon = getcustomasset('elevate/assets/new/legiticon.png'),
 	Size = UDim2.fromOffset(15, 15)
 })
 mainapi.Categories.Main:CreateDivider('misc')
@@ -8682,7 +8682,7 @@ local friendscolor = {
 }
 local friendssettings = {
 	Name = 'Friends',
-	Icon = getcustomasset('aerov4/assets/new/friendstab.png'),
+	Icon = getcustomasset('elevate/assets/new/friendstab.png'),
 	Size = UDim2.fromOffset(17, 16),
 	Placeholder = 'Roblox username',
 	Color = Color3.fromRGB(5, 134, 105),
@@ -8735,7 +8735,7 @@ mainapi:Clean(friends.ColorUpdate)
 ]]
 local profilesCategory = mainapi:CreateCategoryList({
 	Name = 'Profiles',
-	Icon = getcustomasset('aerov4/assets/new/profilesicon.png'),
+	Icon = getcustomasset('elevate/assets/new/profilesicon.png'),
 	Size = UDim2.fromOffset(17, 10),
 	Position = UDim2.fromOffset(12, 16),
 	Placeholder = 'Type name',
@@ -8746,11 +8746,11 @@ local function getPremadeProfiles()
 	local premades = {}
 	local currentGame = tostring(mainapi.Place)
 	
-	if not isfolder('aerov4/profiles/premade') then
-		makefolder('aerov4/profiles/premade')
+	if not isfolder('elevate/profiles/premade') then
+		makefolder('elevate/profiles/premade')
 	end
 	
-	for _, file in pairs(listfiles('aerov4/profiles/premade')) do
+	for _, file in pairs(listfiles('elevate/profiles/premade')) do
 		local fileName = file:gsub('\\', '/'):match('.*/(.+)%.txt$')
 		if fileName then
 			local profileName = fileName:match('^(.+)'..currentGame..'$')
@@ -8803,7 +8803,7 @@ premadeIcon.Name = 'Icon'
 premadeIcon.Size = UDim2.fromOffset(20, 12)
 premadeIcon.Position = UDim2.fromOffset(20, 19)
 premadeIcon.BackgroundTransparency = 1
-premadeIcon.Image = getcustomasset('aerov4/assets/new/profilesicon.png')
+premadeIcon.Image = getcustomasset('elevate/assets/new/profilesicon.png')
 premadeIcon.ImageColor3 = Color3.fromRGB(5, 200, 160)
 premadeIcon.Parent = premadeWindow
 local premadeTitle = Instance.new('TextLabel')
@@ -8931,7 +8931,7 @@ local function showPreview(profileName)
 	end
 	previewPlaceholder.Visible = false
 	
-	local premadeFile = 'aerov4/profiles/premade/'..profileName..mainapi.Place..'.txt'
+	local premadeFile = 'elevate/profiles/premade/'..profileName..mainapi.Place..'.txt'
 	
 	if not isfile(premadeFile) then
 		previewPlaceholder.Visible = true
@@ -9203,7 +9203,7 @@ local function refreshPremadeWindow()
 		emptyIcon.Size = UDim2.fromOffset(40, 24)
 		emptyIcon.Position = UDim2.fromOffset(170, 30)
 		emptyIcon.BackgroundTransparency = 1
-		emptyIcon.Image = getcustomasset('aerov4/assets/new/profilesicon.png')
+		emptyIcon.Image = getcustomasset('elevate/assets/new/profilesicon.png')
 		emptyIcon.ImageColor3 = color.Dark(uipallet.Text, 0.7)
 		emptyIcon.Parent = emptyFrame
 		
@@ -9250,7 +9250,7 @@ local function refreshPremadeWindow()
 		configIcon.Size = UDim2.fromOffset(22, 13)
 		configIcon.Position = UDim2.fromOffset(20, 14)
 		configIcon.BackgroundTransparency = 1
-		configIcon.Image = getcustomasset('aerov4/assets/new/profilesicon.png')
+		configIcon.Image = getcustomasset('elevate/assets/new/profilesicon.png')
 		configIcon.ImageColor3 = accentColor
 		configIcon.Parent = configItem
 		
@@ -9327,7 +9327,7 @@ local function refreshPremadeWindow()
 		local confirmingDupe = false
 			local confirmedOverwrite = false
 		loadButton.MouseButton1Click:Connect(function()
-			local premadeFile = 'aerov4/profiles/premade/'..profileName..mainapi.Place..'.txt'
+			local premadeFile = 'elevate/profiles/premade/'..profileName..mainapi.Place..'.txt'
 			
 			if isfile(premadeFile) then
 				if profilesCategory:GetValue(profileName) and not confirmedOverwrite then
@@ -9352,11 +9352,11 @@ local function refreshPremadeWindow()
 									break
 								end
 							end
-							if isfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
-								pcall(function() delfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') end)
+							if isfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
+								pcall(function() delfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') end)
 							end
 							local premadeData = readfile(premadeFile)
-							writefile('aerov4/profiles/'..profileName..mainapi.Place..'.txt', premadeData)
+							writefile('elevate/profiles/'..profileName..mainapi.Place..'.txt', premadeData)
 							table.insert(mainapi.Profiles, {Name = profileName, Bind = {}})
 							profilesCategory:ChangeValue()
 							mainapi:Load(true)
@@ -9390,18 +9390,18 @@ local function refreshPremadeWindow()
 						break
 					end
 				end
-				if isfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
-					pcall(function() delfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') end)
+				if isfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
+					pcall(function() delfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') end)
 				end
 				local newProfileName = profileName
 				
-				if isfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
-					pcall(function() delfile('aerov4/profiles/'..profileName..mainapi.Place..'.txt') end)
+				if isfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') and delfile then
+					pcall(function() delfile('elevate/profiles/'..profileName..mainapi.Place..'.txt') end)
 				end
 				
 				local premadeData = readfile(premadeFile)
 				
-				writefile('aerov4/profiles/'..newProfileName..mainapi.Place..'.txt', premadeData)
+				writefile('elevate/profiles/'..newProfileName..mainapi.Place..'.txt', premadeData)
 				table.insert(mainapi.Profiles, {Name = newProfileName, Bind = {}})
 				profilesCategory:ChangeValue()
 				mainapi:Save(newProfileName)
@@ -9519,7 +9519,7 @@ profilesCategory:CreateButton({
 local targets
 targets = mainapi:CreateCategoryList({
 	Name = 'Targets',
-	Icon = getcustomasset('aerov4/assets/new/friendstab.png'),
+	Icon = getcustomasset('elevate/assets/new/friendstab.png'),
 	Size = UDim2.fromOffset(17, 16),
 	Placeholder = 'Roblox username',
 	Function = function()
@@ -9547,14 +9547,14 @@ general:CreateButton({
 	Name = 'Reset current profile',
 	Function = function()
 	mainapi.Save = function() end
-		if isfile('aerov4/profiles/'..mainapi.Profile..mainapi.Place..'.txt') and delfile then
-			delfile('aerov4/profiles/'..mainapi.Profile..mainapi.Place..'.txt')
+		if isfile('elevate/profiles/'..mainapi.Profile..mainapi.Place..'.txt') and delfile then
+			delfile('elevate/profiles/'..mainapi.Profile..mainapi.Place..'.txt')
 		end
 		shared.vapereload = true
 		if shared.VapeDeveloper then
-			loadstring(readfile('aerov4/main.lua'), 'loader')()
+			loadstring(readfile('elevate/main.lua'), 'loader')()
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/'..readfile('aerov4/profiles/commit.txt')..'/main.lua', true))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/'..readfile('elevate/profiles/commit.txt')..'/main.lua', true))()
 		end
 	end,
 	Tooltip = 'This will set your profile to the default settings of Vape'
@@ -9571,9 +9571,9 @@ general:CreateButton({
 	Function = function()
 		shared.vapereload = true
 		if shared.VapeDeveloper then
-			loadstring(readfile('aerov4/main.lua'), 'loader')()
+			loadstring(readfile('elevate/main.lua'), 'loader')()
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/'..readfile('aerov4/profiles/commit.txt')..'/main.lua', true))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/'..readfile('elevate/profiles/commit.txt')..'/main.lua', true))()
 		end
 	end,
 	Tooltip = 'Reloads vape for debugging purposes'
@@ -9757,12 +9757,12 @@ guipane:CreateDropdown({
 	List = inputService.TouchEnabled and {'new', 'old'} or {'new', 'old', 'rise'},
 	Function = function(val, mouse)
 		if mouse then
-			writefile('aerov4/profiles/gui.txt', val)
+			writefile('elevate/profiles/gui.txt', val)
 			shared.vapereload = true
 			if shared.VapeDeveloper then
-				loadstring(readfile('aerov4/main.lua'), 'loader')()
+				loadstring(readfile('elevate/main.lua'), 'loader')()
 			else
-				loadstring(game:HttpGet('https://raw.githubusercontent.com/wrealaero/aerov4/'..readfile('aerov4/profiles/commit.txt')..'/main.lua', true))()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/soryedforgive/elevate/'..readfile('elevate/profiles/commit.txt')..'/main.lua', true))()
 			end
 		end
 	end,
@@ -9896,7 +9896,7 @@ mainapi.Categories.Main:CreateBind()
 
 local textgui = mainapi:CreateOverlay({
 	Name = 'Text GUI',
-	Icon = getcustomasset('aerov4/assets/new/textguiicon.png'),
+	Icon = getcustomasset('elevate/assets/new/textguiicon.png'),
 	Size = UDim2.fromOffset(16, 12),
 	Position = UDim2.fromOffset(12, 14),
 	Function = function()
@@ -10030,8 +10030,8 @@ local textguimodules = textgui:CreateToggle({
 textguimoduleslist = textgui:CreateTextList({
 	Name = 'Blacklist',
 	Tooltip = 'Name of module to hide.',
-	Icon = getcustomasset('aerov4/assets/new/blockedicon.png'),
-	Tab = getcustomasset('aerov4/assets/new/blockedtab.png'),
+	Icon = getcustomasset('elevate/assets/new/blockedicon.png'),
+	Tab = getcustomasset('elevate/assets/new/blockedtab.png'),
 	TabSize = UDim2.fromOffset(21, 16),
 	Color = Color3.fromRGB(250, 50, 56),
 	Function = function()
@@ -10102,7 +10102,7 @@ textguicolorcustom = textgui:CreateColorSlider({
 local hudOverlay
 local hudLplr = cloneref(game:GetService('Players')).LocalPlayer
 local hudWidgets = {}
-local hudFile = 'aerov4/profiles/infohud.json'
+local hudFile = 'elevate/profiles/infohud.json'
 local hudPositions = {}
 pcall(function()
 	if isfile(hudFile) then
@@ -10296,7 +10296,7 @@ end
 
 hudOverlay = mainapi:CreateOverlay({
 	Name = 'Info HUD',
-	Icon = getcustomasset('aerov4/assets/new/radaricon.png'),
+	Icon = getcustomasset('elevate/assets/new/radaricon.png'),
 	Size = UDim2.fromOffset(14, 14),
 	Position = UDim2.fromOffset(13, 13),
 	Function = function()
@@ -10490,7 +10490,7 @@ VapeLogo.BackgroundTransparency = 1
 VapeLogo.BorderSizePixel = 0
 VapeLogo.Visible = false
 VapeLogo.BackgroundColor3 = Color3.new()
-VapeLogo.Image = getcustomasset('aerov4/assets/new/textvape.png')
+VapeLogo.Image = getcustomasset('elevate/assets/new/textvape.png')
 VapeLogo.Parent = textgui.Children
 
 local lastside = textgui.Children.AbsolutePosition.X > (gui.AbsoluteSize.X / 2)
@@ -10512,7 +10512,7 @@ VapeLogoV4.Position = UDim2.new(1, 1, 0, 1)
 VapeLogoV4.BackgroundColor3 = Color3.new()
 VapeLogoV4.BackgroundTransparency = 1
 VapeLogoV4.BorderSizePixel = 0
-VapeLogoV4.Image = getcustomasset('aerov4/assets/new/textv4.png')
+VapeLogoV4.Image = getcustomasset('elevate/assets/new/textv4.png')
 VapeLogoV4.Parent = VapeLogo
 local VapeLogoShadow = VapeLogo:Clone()
 VapeLogoShadow.Position = UDim2.fromOffset(1, 1)
@@ -10582,7 +10582,7 @@ local targetinfoobj
 local targetinfobcolor
 targetinfoobj = mainapi:CreateOverlay({
 	Name = 'Target Info',
-	Icon = getcustomasset('aerov4/assets/new/targetinfoicon.png'),
+	Icon = getcustomasset('elevate/assets/new/targetinfoicon.png'),
 	Size = UDim2.fromOffset(14, 14),
 	Position = UDim2.fromOffset(12, 14),
 	CategorySize = 240,
